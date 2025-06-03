@@ -20,7 +20,7 @@ source get_pretrained_models.sh
 ## Dataset
 
 You can download Flare7K++ and Flickr24K datasets [here](https://drive.google.com/file/d/1rQ2ZG3HHoBOogYw_qnH3SgLlNlsQtPST/view). The filtered ExDark
-dataset can be found [here]().
+dataset can be found [here]()(really sorry that the server crash again so I cannot update it now).
 
 The datasets should be placed into [dataset](./deflare/dataset/).
 
@@ -59,7 +59,7 @@ python basicsr/train.py -opt options/uformer_flare7kpp_baseline_option.yml
 
 ### Inference
 
-Pretrained model weight should be placed into `experiments/flare7kpp/`.
+Pretrained model weight(download [here](https://drive.google.com/file/d/1c_tScNxLu8TNBpfGz162vw3CrUBCsBGd/view?usp=drive_link)) should be placed into `experiments/flare7kpp/`.
 
 To start inference on test dataset, you can run the following command:
 
