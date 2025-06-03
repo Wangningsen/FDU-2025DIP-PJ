@@ -74,3 +74,7 @@ To evaluate the performance of the model using PSNR, SSIM, LPIPS, Glare PSNR, an
 ```bash
 python evaluate.py --input result/real/pretrained/blend/ --gt dataset/Flare7Kpp/test_data/real/gt/ --mask dataset/Flare7Kpp/test_data/real/mask/
 ```
+
+## Tool
+
+In [process_exdark.py](./process_exdark.py) I provide a tool for ExDark dataset process. By running it, the resized images and the possible light source will be highlighted on a copy for visualization. Also all coordinates will be written into corresponding json file.
