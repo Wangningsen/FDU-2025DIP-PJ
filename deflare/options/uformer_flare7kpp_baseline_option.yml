@@ -28,6 +28,7 @@ datasets:
     transform_base:
       img_size: 512
     transform_flare:
+      # degrees: [0, 360]
       scale_min: 0.7
       scale_max: 1.2
       translate: 100
@@ -68,19 +69,14 @@ path:
 train:
   optim_g:
     type: Adam
-    lr: !!float 2e-5
+    lr: !!float 1e-4
     weight_decay: 0
     betas: [0.9, 0.99]
 
   scheduler:
     type: MultiStepLR
-    milestones: [436600] 
+    milestones: [400000] 
     gamma: 0.5
-  # scheduler:
-  #   type: CosineAnnealingRestartLR # 明确指定使用这个调度器
-  #   periods: [600000] # 设置为一个周期，长度为总迭代次数
-  #   restart_weights: [1] # 不进行重启，权重为1
-  #   eta_min: !!float 1e-7 # 最小学习率
 
   out_deflare: True
   ema_decay: 0.9
